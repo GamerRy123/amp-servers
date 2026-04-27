@@ -1,0 +1,205 @@
+[
+  {
+    "DisplayName": "Server Name",
+    "Category": "Stardew Valley Server",
+    "Subcategory": "General:dns:1",
+    "Keywords": "name,server,title",
+    "Description": "The display name for your Stardew Valley server.",
+    "FieldName": "ServerName",
+    "ParamFieldName": "ServerName",
+    "InputType": "text",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "Stardew Server",
+    "placeholder": "Pelican Town"
+  },
+  {
+    "DisplayName": "Farm Name",
+    "Category": "Stardew Valley Server",
+    "Subcategory": "General:dns:1",
+    "Keywords": "farm,name,save",
+    "Description": "The name of the farm save file. Will be created on first run if it doesn't exist.",
+    "FieldName": "FarmName",
+    "ParamFieldName": "FarmName",
+    "InputType": "text",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "AMPFarm",
+    "placeholder": "MyFarm"
+  },
+  {
+    "DisplayName": "Max Players",
+    "Category": "Stardew Valley Server",
+    "Subcategory": "General:dns:1",
+    "Keywords": "players,max,cabins",
+    "Description": "Maximum number of players (including host). Stardew Valley supports up to 8.",
+    "FieldName": "$MaxUsers",
+    "ParamFieldName": "MaxPlayers",
+    "InputType": "number",
+    "IncludeInCommandLine": false,
+    "minValue": "2",
+    "maxValue": "8",
+    "DefaultValue": "4",
+    "suffix": "players"
+  },
+  {
+    "DisplayName": "Farm Type",
+    "Category": "Farm Setup",
+    "Subcategory": "World Generation:globe:1",
+    "Keywords": "farm,type,layout,map",
+    "Description": "The type of farm to create on first launch. Only applies to new saves.",
+    "FieldName": "FarmType",
+    "ParamFieldName": "FarmType",
+    "InputType": "enum",
+    "EnumValues": {
+      "0": "Standard Farm",
+      "1": "Riverland Farm",
+      "2": "Forest Farm",
+      "3": "Hilltop Farm",
+      "4": "Wilderness Farm",
+      "5": "Four Corners Farm",
+      "6": "Beach Farm",
+      "7": "Meadowlands Farm"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "0"
+  },
+  {
+    "DisplayName": "Cabin Count",
+    "Category": "Farm Setup",
+    "Subcategory": "World Generation:globe:1",
+    "Keywords": "cabins,starter,buildings",
+    "Description": "Number of starter cabins for other players. Each cabin allows one additional player.",
+    "FieldName": "CabinCount",
+    "ParamFieldName": "CabinCount",
+    "InputType": "number",
+    "IncludeInCommandLine": false,
+    "minValue": "0",
+    "maxValue": "7",
+    "DefaultValue": "3",
+    "suffix": "cabins"
+  },
+  {
+    "DisplayName": "Cabin Layout",
+    "Category": "Farm Setup",
+    "Subcategory": "World Generation:globe:1",
+    "Keywords": "cabin,layout,placement",
+    "Description": "How starter cabins are arranged on the farm.",
+    "FieldName": "CabinLayout",
+    "ParamFieldName": "CabinLayout",
+    "InputType": "enum",
+    "EnumValues": {
+      "0": "Nearby",
+      "1": "Separate"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "1"
+  },
+  {
+    "DisplayName": "Profit Margin",
+    "Category": "Farm Setup",
+    "Subcategory": "Difficulty:speed:2",
+    "Keywords": "profit,margin,economy,difficulty",
+    "Description": "Reduces sale prices for items. Lower values make the game harder.",
+    "FieldName": "ProfitMargin",
+    "ParamFieldName": "ProfitMargin",
+    "InputType": "enum",
+    "EnumValues": {
+      "1.0": "Normal (100%)",
+      "0.75": "75%",
+      "0.5": "50%",
+      "0.25": "25%"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "1.0"
+  },
+  {
+    "DisplayName": "Starting Cash",
+    "Category": "Farm Setup",
+    "Subcategory": "Difficulty:speed:2",
+    "Keywords": "money,cash,gold,starting",
+    "Description": "Starting gold for each player.",
+    "FieldName": "StartingCash",
+    "ParamFieldName": "StartingCash",
+    "InputType": "number",
+    "IncludeInCommandLine": false,
+    "minValue": "0",
+    "maxValue": "100000",
+    "DefaultValue": "500",
+    "suffix": "gold"
+  },
+  {
+    "DisplayName": "Money Style",
+    "Category": "Farm Setup",
+    "Subcategory": "Difficulty:speed:2",
+    "Keywords": "money,shared,separate,wallet",
+    "Description": "Shared wallet means all players share one bank account. Separate gives each player their own.",
+    "FieldName": "MoneyStyle",
+    "ParamFieldName": "MoneyStyle",
+    "InputType": "enum",
+    "EnumValues": {
+      "0": "Shared",
+      "1": "Separate"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "0"
+  },
+  {
+    "DisplayName": "Auto-Save Interval",
+    "Category": "Server Settings",
+    "Subcategory": "Persistence:save:1",
+    "Keywords": "save,autosave,backup,interval",
+    "Description": "How often the server auto-saves the game. In real-world minutes.",
+    "FieldName": "AutoSaveMinutes",
+    "ParamFieldName": "AutoSaveMinutes",
+    "InputType": "number",
+    "IncludeInCommandLine": false,
+    "minValue": "1",
+    "maxValue": "60",
+    "DefaultValue": "10",
+    "suffix": "minutes"
+  },
+  {
+    "DisplayName": "Pause When Empty",
+    "Category": "Server Settings",
+    "Subcategory": "Persistence:save:1",
+    "Keywords": "pause,empty,no players,idle",
+    "Description": "Pause game time when no players are connected. Recommended to save crops/animals.",
+    "FieldName": "PauseWhenEmpty",
+    "ParamFieldName": "PauseWhenEmpty",
+    "InputType": "checkbox",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "True"
+  },
+  {
+    "DisplayName": "Skip Intro Cutscene",
+    "Category": "Server Settings",
+    "Subcategory": "Behavior:settings:2",
+    "Keywords": "intro,cutscene,skip,bus",
+    "Description": "Skip the intro cutscene when creating a new save.",
+    "FieldName": "SkipIntro",
+    "ParamFieldName": "SkipIntro",
+    "InputType": "checkbox",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    },
+    "IncludeInCommandLine": false,
+    "DefaultValue": "True"
+  },
+  {
+    "DisplayName": "SMAPI Verbose Logging",
+    "Category": "Server Settings",
+    "Subcategory": "Logging:bug_report:3",
+    "Keywords": "verbose,logging,debug,smapi",
+    "Description": "Enable verbose SMAPI logging. Useful for debugging mod issues.",
+    "FieldName": "VerboseLogging",
+    "ParamFieldName": "VerboseLogging",
+    "InputType": "checkbox",
+    "IsFlagArgument": true,
+    "IncludeInCommandLine": true,
+    "DefaultValue": "--verbose"
+  }
+]

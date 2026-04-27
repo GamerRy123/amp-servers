@@ -1,0 +1,20 @@
+[
+  {
+    "Range": 1,
+    "Protocol": "TCP",
+    "Name": "Game Port (TCP)",
+    "Description": "Stardew Valley game server port. UDP companion is also reserved.",
+    "Required": true,
+    "IsRcon": false,
+    "Verify": false
+  },
+  {
+    "Range": 1,
+    "Protocol": "UDP",
+    "Name": "Game Port (UDP)",
+    "Description": "Stardew Valley game server port for client communication.",
+    "Required": true,
+    "IsRcon": false,
+    "Verify": false
+  }
+]
