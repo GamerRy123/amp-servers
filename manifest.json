@@ -1,11 +1,11 @@
 {
-  "id": "ef989976-dc8c-4cd0-860b-4172ab3fb4be",
+  "id": "8f2efb43-086f-4574-a719-e4eb1ca55cec",
   "authors": [
     "buchwald-io"
   ],
-  "origin": "https://github.com/buchwald-io/amp-servers.git",
-  "url": "https://github.com/buchwald-io/amp-servers",
+  "origin": "https://github.com/GamerRy123/amp-servers.git",
+  "url": "https://github.com/GamerRy123/amp-servers",
   "imagefile": "",
-  "prefix": "BIO",
+  "prefix": "Custom",
   "repotype": "AppTemplates"
 }
